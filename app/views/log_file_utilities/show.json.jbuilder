@@ -1,0 +1,1 @@
+json.partial! "log_file_utilities/log_file_utility", log_file_utility: @log_file_utility

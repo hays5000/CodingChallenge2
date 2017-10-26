@@ -1,0 +1,1 @@
+json.array! @log_file_utilities, partial: 'log_file_utilities/log_file_utility', as: :log_file_utility

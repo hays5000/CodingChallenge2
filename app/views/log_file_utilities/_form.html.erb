@@ -1,0 +1,22 @@
+<%= form_for(log_file_utility) do |f| %>
+  <% if log_file_utility.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(log_file_utility.errors.count, "error") %> prohibited this log_file_utility from being saved:</h2>
+
+      <ul>
+      <% log_file_utility.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :directory %>
+    <%= f.text_field :directory %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

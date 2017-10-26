@@ -1,0 +1,14 @@
+<h1>Editing Unit</h1>
+
+<%= form_tag unit_path, :method => :put do %>
+
+
+  <div class="field">
+    <%= label_tag 'Name: ' %>
+    <%= text_field_tag :name, @unit[0]['name'] %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag "Update" %>
+  </div>
+<% end %>

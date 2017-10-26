@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+
+  <h4>Unit: <%= @unit[0]['name'] %></h4> <br>
+
+  <strong>Status:</strong>
+  <% if @unit[0]['status'] == 'healthy' %>
+    <span> <i class="fa fa-circle " style="color:green"> </i> </span>
+  <% else %>
+    <span> <i class="fa fa-circle " style="color:red"> </i> </span>
+  <% end %>
+  <br>
+
+  <strong>Occupied:</strong>
+  <% if @unit[0]['occupied'] == true %>
+    <span> <i class="fa fa-circle " style="color:green"> </i> </span>
+  <% else %>
+    <span> <i class="fa fa-circle " style="color:red"> </i> </span>
+  <% end %>
+  <br>
+
+  <strong>Health Status:</strong>
+  <% if @unit[0]['health_status']['health'] == 'healthy'%>
+    <span> <i class="fa fa-circle " style="color:green"> </i> </span>
+  <% else %>
+    <span> <i class="fa fa-circle " style="color:red"> </i> </span>
+  <% end %>
+  <br>
+
+  <strong>Devices</strong>
+  <ul>
+    Thermostats: <%= @unit[0]['devices_count']['thermostat'] %> <br>
+    Gateways: <%= @unit[0]['devices_count']['thermostat'] %> <br>
+    Door Locks: <%= @unit[0]['devices_count']['thermostat'] %> <br>
+  </ul>
+</p>
+
+
+<%= link_to 'Edit', edit_unit_path(@unit[0]['id']) %> |
+<%= link_to 'Back', units_path %>

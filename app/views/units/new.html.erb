@@ -1,0 +1,14 @@
+<h1>New Unit</h1>
+
+<%= form_tag units_path, :method => :post do |f| %>
+
+
+  <div class="field">
+    <%= label_tag 'Name: ' %>
+    <%= text_field_tag :name %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag "Create" %>
+  </div>
+<% end %>

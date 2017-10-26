@@ -1,0 +1,2 @@
+class LogFileUtility < ApplicationRecord
+end

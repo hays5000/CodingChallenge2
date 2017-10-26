@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Log File Utilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Directory</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @log_file_utilities.each do |log_file_utility| %>
+      <tr>
+        <td><%= log_file_utility.directory %></td>
+        <td><%= link_to 'Show', log_file_utility %></td>
+        <td><%= link_to 'Edit', edit_log_file_utility_path(log_file_utility) %></td>
+        <td><%= link_to 'Destroy', log_file_utility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Log File Utility', new_log_file_utility_path %>

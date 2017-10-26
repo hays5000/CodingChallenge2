@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+<!--NAVBAR-->
+<div class="header">
+    <div class="logo">
+        <i class="fa fa-linode fa-2x"></i>
+        <span>CasaiQ Dev Challenge</span>
+    </div>
+    <a href="#" class="nav-trigger"><span></span></a>
+</div>
+<!--SIDEBAR-->
+
+<div class="side-nav">
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-building "> </i> </span>
+          <span>Units<span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-location-arrow "> </i> </span>
+          <span>Locations<span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-id-card "> </i> </span>
+          <span>Benefits<span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-user "> </i> </span>
+          <span>Employees<span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-money "> </i> </span>
+          <span>Pay Grades<span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-building "> </i> </span>
+          <span>Job Roles<span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-laptop "> </i> </span>
+          <span>Assets<span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span> <i class="fa fa-bar-chart "> </i> </span>
+          <span>Reports<span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class='col-md-8'>
+            <p class="notice"><%= notice %></p>
+
+            <p class="alert"><%= alert %></p>
+
+            <%= yield %>
+        </div>
+    </div>
+
+
+</body>
+</html>
